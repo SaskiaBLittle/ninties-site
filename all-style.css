@@ -1,0 +1,17 @@
+body p a{
+    border:1px solid black;
+}
+h1{
+    color:crimson;
+    
+}
+p{
+    padding: 5px;
+}
+body p + ul li{
+    color:blueviolet;
+    padding: 5px;
+}
+body p + ul{
+    letter-spacing:3px;
+}
