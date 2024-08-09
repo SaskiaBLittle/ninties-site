@@ -1,12 +1,12 @@
+
+
+.header {
+    background-color:darksalmon
+}
+
+
 body p a{
     border:1px solid black;
-}
-h1{
-    color:crimson;
-    
-}
-p{
-    padding: 5px;
 }
 body p + ul li{
     color:blueviolet;
@@ -14,4 +14,11 @@ body p + ul li{
 }
 body p + ul{
     letter-spacing:3px;
+}
+h1{
+    color:crimson;
+    
+}
+p{
+    padding: 5px;
 }
