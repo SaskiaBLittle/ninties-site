@@ -1,13 +1,17 @@
 
 
+
 .centerText{
     text-align: center;
     color: #444;
     font-size: 125%;
     font-weight: bold;
 }
-.header {
+header {
     background-color:coral;
+    width: 1900px;
+    height: 70px;
+    overflow: hidden;
 }
 
 
@@ -39,7 +43,6 @@ h2{
 article p{
     color: #444;
     text-align:left;
-    
 }
 img{
     display: block;
