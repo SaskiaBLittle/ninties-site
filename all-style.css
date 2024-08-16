@@ -1,8 +1,12 @@
 
 
-.header {
-    background-color:darksalmon
+.centerText{
+    text-align: center;
 }
+.header {
+    background-color:coral;
+}
+
 
 
 body p a{
@@ -16,9 +20,20 @@ body p + ul{
     letter-spacing:3px;
 }
 h1{
-    color:crimson;
+    font-size: 250%;
+    color:coral;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     
 }
-p{
-    padding: 5px;
+group p{
+    text-indent: 10px;
+    
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2 > a{
+    text-indent: 20px;
 }
