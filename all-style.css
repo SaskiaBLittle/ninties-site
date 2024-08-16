@@ -40,6 +40,10 @@ h1{
 h2{
     text-indent: 1%;
 }
+h2 p{
+    font-size: 70%;
+    font-weight:lighter;
+}
 article p{
     color: #444;
     text-align:left;
