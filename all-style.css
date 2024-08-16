@@ -2,6 +2,9 @@
 
 .centerText{
     text-align: center;
+    color: #444;
+    font-size: 125%;
+    text-shadow: -1px -1px 0 #444, 1px -1px 0 #444, -1px 1px 0 #444, 1px 1px 0 #444;
 }
 .header {
     background-color:coral;
@@ -9,24 +12,31 @@
 
 
 
+body p, body h2, body h3{
+    color: #444;
+}
 body p a{
-    border:1px solid black;
+    border:1px solid #444;
 }
 body p + ul li{
-    color:blueviolet;
+    color: #444;
     padding: 5px;
 }
 body p + ul{
     letter-spacing:3px;
 }
 h1{
-    font-size: 250%;
+    font-size: 350%;
     color:coral;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    
+    text-shadow: -1px -1px 0 #6d3a10, 1px -1px 0 #6d3a10, -1px 1px 0 #6d3a10, 1px 1px 0 #6d3a10;
+    text-indent: 1%;
+}
+h2{
+    text-indent: 1%;
 }
 group p{
-    text-indent: 10px;
+    color: #444;
+    text-indent: 2%;
     
 }
 img{
@@ -34,6 +44,4 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
-h2 > a{
-    text-indent: 20px;
-}
+
