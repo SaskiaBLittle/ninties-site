@@ -17,9 +17,55 @@
         <section>
             <h1>Fur and Fluff</h1>
             <p>Many animals have fur such as cats and dogs, so you may need to be more specific about what you want in a pet. Some very loveable pets with fur include the most popular house pets (cats and dogs). There are also more wild animals like red pandas and foxes which you shouldn't keep as pets, due to there nature.</p>
+            <h3>Some common animals seen with fur are:</h3>
         </section>
+
+        <button type="button">Other animals</button>
+        <script>
+            // Function: creates a new paragraph and appends it to the bottom of the HTML body.
+
+            function toggleList(event) {
+                const button = event.currentTarget; // Get the button that was clicked
+                let list = button.nextSibling; // Get the next sibling of the button (which will be the list if it exists)
+
+                // Check if the next sibling is an unordered list
+                if (list && list.tagName === "UL") {
+                // If the list is already visible, hide it
+                    if (list.style.display === "none") {
+                        list.style.display = "block";
+                    } else {
+                        // Otherwise, hide the list
+                        list.style.display = "none";
+                    }
+                } else {
+                    // Create a new unordered list if it doesn't exist
+                    list = document.createElement("ul");
+
+                    // Array of items to include in the list
+                    const items = ["Ferrets", "Rats", "Mice", "Hamsters", "Guinea Pigs", "Hedgehogs", "Tarantulas", "Chinchillas"];
+
+                    // Create and append each list item to the unordered list
+                    for (const item of items) {
+                        const listItem = document.createElement("li");
+                        listItem.textContent = item;
+                        list.appendChild(listItem);
+                    }
+
+                    // Insert the list after the button
+                    button.parentNode.insertBefore(list, button.nextSibling);
+                }
+
+                // Optionally, remove the event listener if you want the button to be clickable only once
+                // button.removeEventListener("click", toggleList);
+            }
+
+            // Attach the event listener to all buttons
+            const buttons = document.querySelectorAll("button");
+            for (const button of buttons) {
+                button.addEventListener("click", toggleList);
+            }
+        </script>
         
-        <h3>Some common animals seen with fur are:</h3>
         <a href="cat.html"><img src="Images\Cat.jpg" alt="Cat" /></a>
         <a href="dog.html"><img src="Images\Dog.jpg" alt="Dog" /></a>
         <a href="rabbit.html"><img src="Images\Rabbit.jpg" alt="Rabbit" /></a>

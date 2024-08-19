@@ -7,12 +7,6 @@
     font-size: 125%;
     font-weight: bold;
 }
-header {
-    background-color:coral;
-    width: 1900px;
-    height: 70px;
-    overflow: hidden;
-}
 
 
 body{
@@ -24,12 +18,27 @@ body p, body h2, body h3{
 body p a{
     border:1px solid #444;
 }
-body p + ul li{
+body p ul{
     color: #444;
-    padding: 5px;
+    padding-left: 50px;
 }
-body p + ul{
-    letter-spacing:3px;
+header {
+    background-color:coral;
+    width: 1900px;
+    height: 70px;
+    overflow: hidden;
+}
+article p{
+    color: #444;
+    text-align:left;
+    padding-left: 50px;
+    padding-right: 500px;
+}
+section p, section h3{
+    color: #444;
+    text-align:left;
+    padding-left: 50px;
+    padding-right: 500px;
 }
 h1{
     font-size: 350%;
@@ -38,15 +47,12 @@ h1{
     text-indent: 1%;
 }
 h2{
-    text-indent: 1%;
+    padding-left: 30px;
 }
 h2 p{
     font-size: 70%;
     font-weight:lighter;
-}
-article p{
-    color: #444;
-    text-align:left;
+    padding-left: 20px;
 }
 img{
     display: block;
@@ -55,3 +61,16 @@ img{
     border: 5px solid coral;
 }
 
+
+button {
+    font-family: "helvetica neue", helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 2px rgb(0 0 200 / 40%);
+    border-radius: 10px;
+    padding: 3px 10px;
+    margin-left: 50px;
+    cursor: pointer;
+    color: #444;
+    border-color: coral;
+  }
