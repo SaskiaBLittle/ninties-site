@@ -67,12 +67,10 @@ function checkAnswers() {
 
     //Q4 - drag and drop
     const frogDropZone = document.getElementById('dropAmphibian').textContent.trim();
-    const snakeDropZone = document.getElementById('dropReptile').textContent.trim();
 
     const frogCorrect = frogDropZone === 'Frog';
-    const snakeCorrect = snakeDropZone === 'Snake';
 
-    if (frogCorrect && snakeCorrect) {
+    if (frogCorrect) {
         score++;
         feedback += '<p class="correct">4. Correct!</p>';
     } else {
