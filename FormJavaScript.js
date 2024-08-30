@@ -1,10 +1,8 @@
-
-
 //Drag and drop functionality
 const draggables = document.querySelectorAll('.draggable');
 const dropZones = document.querySelectorAll('.drop-zone');
 
-draggables.forEach(draggable =>{
+draggables.forEach(draggable => {
     draggable.addEventListener('dragstart', dragStart);
 });
 
@@ -13,15 +11,15 @@ dropZones.forEach(zone => {
     zone.addEventListener('drop', drop);
 });
 
-function dragStart(event){
+function dragStart(event) {
     event.dataTransfer.setData("text", event.target.id);
 }
 
-function dragOver(event){
+function dragOver(event) {
     event.preventDefault();
 }
 
-function drop(event){
+function drop(event) {
     event.preventDefault();
     const data = event.dataTransfer.getData("text");
     event.target.textContent = document.getElementById(data).textContent;
@@ -31,17 +29,17 @@ function drop(event){
 
 
 //Quiz Answer Check
-function checkAnswers(){
+function checkAnswers() {
     let score = 0;
     let feedback = '';
 }
 
 //Q1 - One answer
-const q1 = document.querySelector(`input[name="q1"]:checked`);
-if (q1 && q1.value === "Mammal"){
+const q1 = document.querySelector('input[name="q1"]:checked');
+if (q1 && q1.value === "Mammal") {
     score++;
     feedback += '<p class="correct">1. Correct!</p>';
-}else{
+} else {
     feedback += '<p class="incorrect">1. Incorrect!</p>';
 }
 
@@ -53,19 +51,19 @@ const selectedValues = Array.from(checkboxes).map(cb => cb.value);
 const allCorrect = correctAnswers.every(answer => selectedValues.includes(answer));
 const noneIncorrect = !Array.from(document.querySelectorAll('input[name="q2"]')).some(cb => !cb.checked && correctAnswers.includes(cb.value));
 
-if (allCorrect && noneIncorrect){
+if (allCorrect && noneIncorrect) {
     score++;
     feedback += '<p class="correct">2. Correct!</p>';
-}else{
+} else {
     feedback += '<p class="incorrect">2. Incorrect!</p>';
 }
 
 //Q3 - write question
 const q3 = document.getElementById('q3').value;
-if (q3 === '1000'){
+if (q3 === '1000') {
     score++;
     feedback += '<p class="correct">3. Correct!</p>';
-}else{
+} else {
     feedback += '<p class="incorrect">3. Incorrect!</p>';
 }
 
@@ -84,10 +82,6 @@ if (frogCorrect && snakeCorrect) {
 }
 
 
-
 const feedbackElement = document.getElementById('feedback');
 feedbackElement.innerHTML = feedback;
 feedbackElement.innerHTML += `<p>Your score: ${score}/4</p>`;
-//const q2 = document.querySelector('input [name="q2"] :checked');
-//if (q2 )
-//q3 add a trim() and a toLower()
