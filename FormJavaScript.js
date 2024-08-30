@@ -1,23 +1,3 @@
-// Function: creates a new paragraph and appends it to the bottom of the HTML body.
-
-function createParagraph() {
-    const para = document.createElement("p");
-    para.textContent = "You clicked the button!";
-    document.body.appendChild(para);
-}
-
-/*
-    1. Get references to all the buttons on the page in an array format.
-    2. Loop through all the buttons and add a click event listener to each one.
-
-    When any button is pressed, the createParagraph() function will be run.
-*/
-
-const buttons = document.querySelectorAll("button");
-
-for (const button of buttons) {
-    button.addEventListener("click", createParagraph);
-}
 
 
 //Drag and drop functionality
@@ -53,6 +33,23 @@ function drop(event){
 //Quiz Answer Check
 function checkAnswers(){
     let score = 0;
+    let feedback = '';
 }
 
 //Q1 - One answer
+const q1 = document.querySelector(`input[name="q1"]:checked`);
+if (q1 && q1.value === "mammal"){
+    score++;
+    feedback += '<p class="correct">1. Correct!</p>';
+}else{
+    feedback += '<p class="incorrect">1. Incorrect!</p>';
+}
+
+
+
+const feedbackElement = document.getElementById('feedback');
+feedbackElement.innerHTML = feedback;
+feedbackElement.innerHTML += `<p>Your score: ${score}</p>`;
+//const q2 = document.querySelector('input [name="q2"] :checked');
+//if (q2 )
+//q3 add a trim() and a toLower()
