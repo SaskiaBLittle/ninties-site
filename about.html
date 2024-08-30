@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="all-style.css" />
+        <script src="FormJavaScript.js" defer></script>
         <title>About page</title>
     </head>
     <body>
@@ -19,28 +20,35 @@
             <p>I have created this page because I am learning about web development. This page is my first attempt at developing a working web from the ninties</p>
         </section>
 
-        <button type="button">Click me!</button>
-        <script>
-            // Function: creates a new paragraph and appends it to the bottom of the HTML body.
 
-            function createParagraph() {
-                const para = document.createElement("p");
-                para.textContent = "You clicked the button!";
-                document.body.appendChild(para);
-            }
+        <h1>Quiz!</h1>
+        <div>
+            <h3>1. What type of animal is a cat?</h3>
+            <label><input type="radio" name="q1" value="Amphibian">Amphibian</label><br>
+            <label><input type="radio" name="q1" value="Bird">Bird</label><br>
+            <label><input type="radio" name="q1" value="Mammal">Mammal</label><br>
+            <label><input type="radio" name="q1" value="Reptile">Reptile</label><br>
+        </div>
+        <div>
+            <h3>2. What answers apply to birds?</h3>
+            <label><input type="checkbox" name="q2" value="Flight">Flight</label><br>
+            <label><input type="checkbox" name="q2" value="Gills">Gills</label><br>
+            <label><input type="checkbox" name="q2" value="Feathered">Feathered</label><br>
+            <label><input type="checkbox" name="q2" value="Lips">Lips</label><br>
+        </div>
+        <div>
+            <h3>3. How many legs does a Millipede have?</h3>
+            <input type="text" id="q3">
+        </div>
+        <div>
+            <h3>4. What is what?</h3>
+            <div class="drop-zone" id="dropReptile">Reptile</div>
+            <div class="drop-zone" id="dropAmphibian">Amphibian</div>
+            <div class="draggable" draggable="true" id="Frog"><img src="Images\Frog.png" alt="Frog"/></div>
+            <div class="draggable" draggable="true" id="Snake"><img src="Images\Snake.png" alt="Frog"/></div>
+        </div>
 
-            /*
-                1. Get references to all the buttons on the page in an array format.
-                2. Loop through all the buttons and add a click event listener to each one.
-
-                When any button is pressed, the createParagraph() function will be run.
-            */
-
-            const buttons = document.querySelectorAll("button");
-
-            for (const button of buttons) {
-                button.addEventListener("click", createParagraph);
-            }
-        </script>
+        <br>
+        <button type="button">Submit</button>
     </body>
 </html>
