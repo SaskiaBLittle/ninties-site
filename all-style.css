@@ -1,0 +1,91 @@
+#dropReptile{
+    margin: 1%;
+}
+#dropAmphibian{
+    margin: 1%;
+}
+
+
+.centerText{
+    text-align: center;
+    color: #444;
+    font-size: 125%;
+    font-weight: bold;
+}
+.bold{
+    font-weight: bold;
+}
+
+
+body{
+    background-color: #ececec;
+}
+body p, body h2, body h3{
+    color: #444;
+}
+body p a{
+    border:1px solid #444;
+}
+body p ul{
+    color: #444;
+    padding-left: 50px;
+}
+header {
+    background-color:coral;
+    width: 1900px;
+    height: 70px;
+    overflow: hidden;
+}
+article p{
+    color: #444;
+    text-align:left;
+    padding-left: 50px;
+    padding-right: 500px;
+}
+section p, section h3{
+    color: #444;
+    text-align:left;
+    padding-left: 50px;
+    padding-right: 500px;
+}
+table{
+    color: #444;
+    padding-left: 50px;
+}
+h1{
+    font-size: 350%;
+    color:coral;
+    text-shadow: -1px -1px 0 #6d3a10, 1px -1px 0 #6d3a10, -1px 1px 0 #6d3a10, 1px 1px 0 #6d3a10;
+    text-indent: 1%;
+}
+h2{
+    padding-left: 30px;
+}
+h2 p{
+    font-size: 70%;
+    font-weight:lighter;
+    padding-left: 20px;
+}
+section img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid coral;
+}
+td{
+    padding-right: 10px;
+}
+
+
+button {
+    font-family: "helvetica neue", helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 2px rgb(0 0 200 / 40%);
+    border-radius: 10px;
+    padding: 3px 10px;
+    margin-left: 50px;
+    cursor: pointer;
+    color: #444;
+    border-color: coral;
+  }
